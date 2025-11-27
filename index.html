@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head class="header">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Przewodnik po Tczewie</title>
+  <link rel="shortcut icon" href="./img/4791015_bridge_building_gate_golden_landmark_icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Ikony i fonty -->
+  <script src="https://kit.fontawesome.com/2b7d993087.js" crossorigin="anonymous" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="screen and (min-width:768px)" href="medium.css">
+  <link rel="stylesheet" media="screen and (min-width:992px)" href="large.css">
+</head>
+
+<body>
+  <header class="flex_column_container">
+    <div>
+      <h1>Przewodnik po Tczewie</h1>
+      <h2>Ważne miejsca w mieście</h2>
+    </div>
+    <a href="#main" class="button">Czytaj więcej</a>
+  </header>
+
+  <main id="main">
+    <!-- Miejsca -->
+    <section class="miejsca2" aria-label="Miejsca w Tczewie">
+      <div class="miejsca2">
+        <!-- Dworzec -->
+        <div class="miejsce flex_column_container">
+          <h3 class="dworzec">Dworzec kolejowy</h3>
+          <img src="dworzec.jpg" alt="Dworzec kolejowy w Tczewie z placem przed budynkiem" loading="lazy"
+            decoding="async" />
+          <p>Dworzec kolejowy w Tczewie był wielokrotnie przebudowywany. Podczas II wojny światowej odgrywał ważną rolę
+            dla Wojska Polskiego.</p>
+          <a href="https://koleo.pl/dworzec-pkp/tczew/odjazdy" class="button">Więcej</a>
+        </div>
+
+        <!-- Most -->
+        <div class="miejsce flex_column_container">
+          <h3 class="most lisewski">Most Lisewski</h3>
+          <img src="most lisewski.jpg" alt="Most Lisewski" loading="lazy" decoding="async" />
+          <p>Most Lisewski, grał ważną rolę podczas drugiej wojny światowej.</p>
+          <a href="https://koleo.pl/dworzec-pkp/tczew/odjazdy" class="button">Więcej</a>
+        </div>
+
+        <!-- Galeria -->
+        <div class="miejsce flex_column_container">
+          <h3 class="galeria">Galeria Kociewska</h3>
+          <img src="galeria.jpg" alt="Galeria Kociewska z ceglaną elewacją i zegarem" loading="lazy" decoding="async" />
+          <p>Galeria Kociewska, mimo kompaktowych rozmiarów, mieści wiele sklepów – z parterem, piętrem oraz poziomem
+            -1.</p>
+          <a href="https://kociewskagaleria.pl/" class="button">Więcej</a>
+        </div>
+
+        <!-- Bulwar -->
+        <div class="miejsce flex_column_container">
+          <h3 class="bulwar">Bulwar nadwiślański</h3>
+          <img src="bulwar.jpg" alt="Bulwar nad Wisłą z placem zabaw i apartamentami" loading="lazy" decoding="async" />
+          <p>Bulwar nadwiślański to popularna przestrzeń spacerowa. Regularnie odbywają się tu wydarzenia dla
+            mieszkańców Tczewa.</p>
+          <a href="https://tczew.pl/bulwar-nadwislanski/" class="button">Więcej</a>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="newsletter_box">
+        <h2 id="newsletter">Newsletter</h2>
+        <p>Zapisz się na nasz newsletter!</p>
+        <form action="">
+          <div class="newsletter_inputs">
+            <input class="imię" type="text" placeholder="Imię">
+            <input class="email" type="email" placeholder="E-mail">
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" required /> Zapoznałem(-am) się z regulaminem
+            </label>
+          </div>
+          <button class="button" type="submit">Zapisz się!</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="contact flex_column_container">
+      <h2 class="h2">Kontakt</h2>
+      <div class="all_contact">
+        <div class="single_contact">
+          <i class="fa-solid fa-comment" aria-hidden="true"></i>
+          <p>Chat z konsultantem</p>
+        </div>
+
+        <div class="single_contact">
+          <a class="single_contact" href="mailto:kontakt@tczew.example" aria-label="Wyślij wiadomość e‑mail">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <p>Mail</p>
+          </a>
+        </div>
+
+        <div class="single_contact">
+          <a class="single_contact" href="tel:+49123123123" aria-label="Zadzwoń pod numer +49 123 123 123">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <p>+49 123 123 123</p>
+          </a>
+        </div>
+    </section>
+
+    <!-- Komentarze -->
+    <section class="flex_column_container comments">
+      <h2 class="h2">Komentarze</h2>
+      <div class="komentarze">
+        <div class="flex_column_container single_comment">
+          <p>OK</p>
+          <p><small>Tomasz, Wyborcza</small></p>
+        </div>
+        <div class="flex_column_container single_comment">
+          <p>OK</p>
+          <p><small>Adrian Nowak</small></p>
+        </div>
+        <div class="flex_column_container single_comment">
+          <p>OKKKK</p>
+          <p><small>Marcinek</small></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mapa -->
+    <section aria-labelledby="mapa" class="flex_column_container map">
+      <h2 class="h2">Zobacz Tczew</h2>
+      <iframe title="Mapa Tczewa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37440.64569155227!2d18.74041109391591!3d54.09075985420118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd60d09a3ab06f%3A0x89ea2c6348da9695!2s83-110%20Tczew!5e0!3m2!1spl!2spl!4v1761821201603!5m2!1spl!2spl"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
+      </iframe>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <p>Obserwuj nas na:</p>
+      <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><img src="yt.png"
+          alt="YouTube" /></a>
+      <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><img src="fb.png"
+          alt="Facebook" /></a>
+      <a href="https://reddit.com" target="_blank" rel="noopener" aria-label="Reddit"><img src="reddit.png"
+          alt="Reddit" /></a>
+      <a href="https://x.com" target="_blank" rel="noopener" aria-label="X/Twitter"><img src="twitter.png"
+          alt="X (Twitter)" /></a>
+    </div>
+    <div>
+      <p>Projekt WSB Merito Gdańsk 2025–2026</p>
+      <p>Autor: Student Brian</p>
+    </div>
+  </footer>
+</body>
+
+</html>
